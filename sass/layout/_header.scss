@@ -1,32 +1,33 @@
 @use "../abstract/variables";
-header{
-    // background: #FFF;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
-    padding: 23px 0 24px 0;
-    .nav__brand{
-        // color: variables.$colorDark;
-        font-family: Nunito Sans;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
-    }
-    .nav__dark-mode{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        .nav__img{
-            cursor: pointer;
-        }
-    }
-}
-@media only screen and (max-width: 576px) {
-    header{
-        padding: 10px 20px;
-        .container{
-            flex-direction: column;
-            align-items:start;
-        }
+header {
+  // background: #FFF;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+  padding: 23px 0 24px 0;
+
+  .nav__brand {
+    // color: variables.$colorDark;
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  .nav__dark-mode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    .nav__img {
+      cursor: pointer;
     }
   }
+}
+@media only screen and (max-width: 576px) {
+  header {
+    padding: 10px 20px;
+    .container {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+}
